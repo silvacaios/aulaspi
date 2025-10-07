@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class EventodController {
 
-	@RequestMapping(" /Evento/form")
+	@RequestMapping("/eventos/form")
 	public String form() {
 		return "formEvento";
 	}
