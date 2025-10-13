@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class evento {
+public class Evento {
 
 	private Long id;
 	private String nome;
@@ -55,6 +55,14 @@ public class evento {
 
 	public void setHorario(String horario) {
 		this.horario = horario;
+		
+		
+	}
+
+	@Override
+	public String toString() {
+		return "evento [id=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario=" + horario
+				+ "]";
 	}
 
 }
