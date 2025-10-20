@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <title>Insert title here</title>
 </head>
 <body>
+<div th:replace="~{}menu :: menu"></div>
+
+ <div classe="container">
+ 
+
+ 
 <h1>Adicionar Evento</h1>
 
 <form action="/eventos" method="post">
@@ -29,10 +38,11 @@
 
 <div>
 
-<button type="submit"> salvar</button>
-<button type="reset"> limpar</button>
+<button classe="waves-effect waves-light btn" type="submit"> salvar</button>
+<button classe="waves-effect waves-light btn"type="reset"> limpar</button>
 </div>
 
 </form>
+ </div>
 </body>
 </html>

@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Evento {
+public class evento {
 
 	private Long id;
 	private String nome;

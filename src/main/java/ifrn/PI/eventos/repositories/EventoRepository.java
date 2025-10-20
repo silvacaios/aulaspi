@@ -1,5 +1,9 @@
 package ifrn.PI.eventos.repositories;
 
-public interface EventoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import ifrn.PI.eventos.models.Evento;
+
+public interface EventoRepository extends JpaRepository<evento, Long>{
 
 }
