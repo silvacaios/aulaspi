@@ -1,11 +1,29 @@
 package ifrn.PI.eventos.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class evento {
 
+	private Long id;
 	private String nome;
 	private String local;
 	private String data;
 	private String horario;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;
@@ -37,6 +55,14 @@ public class evento {
 
 	public void setHorario(String horario) {
 		this.horario = horario;
+		
+		
+	}
+
+	@Override
+	public String toString() {
+		return "evento [id=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario=" + horario
+				+ "]";
 	}
 
 }
